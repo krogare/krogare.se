@@ -108,7 +108,7 @@ a {
   z-index: -3;
   background:
     linear-gradient(100deg, rgba(9, 17, 36, 0.78) 5%, rgba(9, 17, 36, 0.58) 40%, rgba(9, 17, 36, 0.42) 100%),
-    url("./svenska-krogare-hero.jpg") center / cover no-repeat,
+    url("/public/images/hero/hero-bg.svg") center / cover no-repeat,
     linear-gradient(120deg, #101727 0%, #243a6f 42%, #6b5230 100%);
 }
 
