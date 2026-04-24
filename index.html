@@ -8,18 +8,50 @@
 </head>
 <body>
 
-  <section class="hero">
-    <div class="container">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-decor" aria-hidden="true">
+      <div class="decor-curve"></div>
+      <article class="decor-card decor-card--kpi">
+        <span class="decor-icon">↗</span>
+        <div>
+          <p class="decor-title">Totala inköp</p>
+          <p class="decor-value">24,495 kr</p>
+          <p class="decor-note">2,1% bättre än samma period förra året</p>
+        </div>
+      </article>
+      <article class="decor-card decor-card--alert">
+        <span class="decor-icon">⚑</span>
+        <div>
+          <p class="decor-title">Prislarm</p>
+          <p class="decor-note">2 nya rekommendationer kan sänka dina inköp med 4 397 kr.</p>
+        </div>
+      </article>
+      <article class="decor-card decor-card--chart">
+        <p class="decor-title">Utveckling</p>
+        <p class="decor-note">Kategori: Färsk frukt & grönt</p>
+        <div class="mini-chart" role="presentation">
+          <span style="--h: 58%"></span>
+          <span style="--h: 72%"></span>
+          <span style="--h: 65%"></span>
+        </div>
+      </article>
+    </div>
+
+    <div class="container hero-content">
       <div class="hero-box">
         <span class="eyebrow">Bli medlem</span>
-        <h1>Driver du krog? bar? café? hotell? golfkrog? camping? bistro?</h1>
+        <h1 id="hero-title">
+          Driver du <span class="rotating-word" aria-live="polite">krog</span>?
+        </h1>
         <p>
           Tack vare Sveriges tryggaste avtal kan vi erbjuda en helhetslösning
           som förbättrar din marginal från dag ett.
         </p>
         <div class="hero-actions">
           <a href="#" class="btn btn-primary">Bli medlem idag</a>
-          <a href="#" class="btn btn-secondary">Se medlemsfördelar</a>
+          <a href="#" class="btn btn-secondary">Se medlemsfördelar <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </div>
@@ -80,6 +112,24 @@
       </div>
     </div>
   </section>
+
+  <script>
+    (() => {
+      const words = ["krog", "café", "bar", "hotell", "förskola", "bistro", "golfkrog", "camping"];
+      const rotatingWord = document.querySelector('.rotating-word');
+      let index = 0;
+
+      window.setInterval(() => {
+        index = (index + 1) % words.length;
+        rotatingWord.classList.add('is-fading');
+
+        window.setTimeout(() => {
+          rotatingWord.textContent = words[index];
+          rotatingWord.classList.remove('is-fading');
+        }, 140);
+      }, 2100);
+    })();
+  </script>
 
 </body>
 </html>
