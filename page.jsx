@@ -16,16 +16,18 @@ export default function Page() {
   return (
     <>
       <Header />
-      <Hero />
-      <IntroSection />
-      <SavingsCalculator />
-      <HowItWorks />
-      <LogoCloud />
-      <DataInsightSection />
-      <PortfolioCards />
-      <MemberBenefits />
-      <InsightsPreview />
-      <FinalCTA />
+      <main id="main-content">
+        <Hero />
+        <IntroSection />
+        <SavingsCalculator />
+        <HowItWorks />
+        <LogoCloud />
+        <DataInsightSection />
+        <PortfolioCards />
+        <MemberBenefits />
+        <InsightsPreview />
+        <FinalCTA />
+      </main>
       <Footer />
     </>
   );
