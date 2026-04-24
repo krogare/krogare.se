@@ -9,7 +9,7 @@ export default function Hero() {
           din marginal från dag ett.
         </p>
         <div className="hero-actions">
-          <a href="#" className="btn btn-primary">Bli medlem idag</a>
+          <a href="#contact" className="btn btn-primary">Bli medlem idag</a>
           <a href="#benefits" className="btn btn-secondary">Se medlemsfördelar</a>
         </div>
       </div>
