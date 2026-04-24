@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/ProximaNova-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/ProximaNova-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-bg: #f7f8fa;
+  --color-surface: #ffffff;
+  --color-primary: #1f3b82;
+  --color-primary-hover: #14295c;
+  --color-text: #111827;
+  --color-text-soft: #5f6b7a;
+  --color-border: rgba(17, 24, 39, 0.08);
+  --color-primary-soft: rgba(31, 59, 130, 0.08);
+  --color-primary-soft-strong: rgba(31, 59, 130, 0.14);
+  --color-accent-glow: rgba(255, 179, 0, 0.08);
+
+  --font-family-base: 'Proxima Nova', Arial, sans-serif;
+  --font-size-sm: 15px;
+  --font-size-md: 17px;
+  --font-size-lg: 20px;
+  --font-size-h2: clamp(30px, 4vw, 48px);
+  --font-size-hero: clamp(38px, 6vw, 68px);
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --space-2: 14px;
+  --space-3: 18px;
+  --space-4: 20px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 40px;
+  --space-8: 56px;
+  --space-9: 72px;
+  --space-page-x: 20px;
+
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --shadow-soft: 0 20px 60px rgba(16, 24, 40, 0.08);
+  --container-max: 1200px;
+}
