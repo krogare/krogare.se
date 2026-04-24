@@ -12,38 +12,58 @@
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="hero-overlay" aria-hidden="true"></div>
     <div class="hero-decor" aria-hidden="true">
-      <div class="decor-curve"></div>
+      <div class="decor-glass"></div>
+      <div class="decor-curve decor-curve--gold"></div>
+      <div class="decor-curve decor-curve--blue"></div>
+
       <article class="decor-card decor-card--kpi">
-        <span class="decor-icon">↗</span>
+        <span class="decor-icon decor-icon--green">☰</span>
         <div>
           <p class="decor-title">Totala inköp</p>
           <p class="decor-value">24,495 kr</p>
-          <p class="decor-note">2,1% bättre än samma period förra året</p>
+          <p class="decor-positive">2,1% bättre än samma period förra året</p>
         </div>
       </article>
+
       <article class="decor-card decor-card--alert">
-        <span class="decor-icon">⚑</span>
+        <span class="decor-icon decor-icon--orange">⚑</span>
         <div>
           <p class="decor-title">Prislarm</p>
-          <p class="decor-note">2 nya rekommendationer kan sänka dina inköp med 4 397 kr.</p>
+          <p class="decor-note">Du har 2 nya produktrekommendationer som kan generera <strong>4397 kr</strong> i besparingar.</p>
         </div>
       </article>
+
+      <article class="decor-card decor-card--offer">
+        <div class="decor-offer-head">
+          <span class="decor-icon decor-icon--gray">✉</span>
+          <p class="decor-title">Ny offert att granska</p>
+        </div>
+        <p class="decor-note decor-note--offer">Gratis! Vi har förhandlat priset åt dig. Läs mer <u>här</u>.</p>
+        <div class="decor-chips">
+          <span>Öppna offert</span>
+          <span>Godkänn offert</span>
+        </div>
+      </article>
+
       <article class="decor-card decor-card--chart">
         <p class="decor-title">Utveckling</p>
         <p class="decor-note">Kategori: Färsk frukt & grönt</p>
         <div class="mini-chart" role="presentation">
-          <span style="--h: 58%"></span>
+          <span style="--h: 64%"></span>
+          <span style="--h: 70%"></span>
+          <span style="--h: 52%"></span>
+          <span style="--h: 45%"></span>
           <span style="--h: 72%"></span>
-          <span style="--h: 65%"></span>
+          <span style="--h: 56%"></span>
+          <span style="--h: 80%"></span>
         </div>
       </article>
     </div>
 
     <div class="container hero-content">
       <div class="hero-box">
-        <span class="eyebrow">Bli medlem</span>
         <h1 id="hero-title">
-          Driver du <span class="rotating-word" aria-live="polite">krog</span>?
+          Driver du <span class="rotating-word" aria-live="polite">hotell</span>?
         </h1>
         <p>
           Tack vare Sveriges tryggaste avtal kan vi erbjuda en helhetslösning
@@ -115,7 +135,7 @@
 
   <script>
     (() => {
-      const words = ["krog", "café", "bar", "hotell", "förskola", "bistro", "golfkrog", "camping"];
+      const words = ["hotell", "krog", "café", "bar", "förskola", "bistro", "golfkrog", "camping"];
       const rotatingWord = document.querySelector('.rotating-word');
       let index = 0;
 
