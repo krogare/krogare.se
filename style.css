@@ -7,9 +7,9 @@
 }
 
 @font-face {
-  font-family: "Proxima Nova";
+font-family: "Proxima Nova";
   src: url("./Proxima Nova Semibold.woff2") format("woff2");
-  font-weight: 600;
+font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -107,8 +107,6 @@ a {
 .hero-bg {
   z-index: -3;
   background:
-    linear-gradient(95deg, rgba(5, 10, 17, 0.84) 8%, rgba(5, 10, 17, 0.62) 38%, rgba(5, 10, 17, 0.36) 72%),
-    url("./svenska-krogare-hero.jpg") center 35% / cover no-repeat,
     linear-gradient(120deg, #101727 0%, #243a6f 42%, #6b5230 100%);
 }
 
